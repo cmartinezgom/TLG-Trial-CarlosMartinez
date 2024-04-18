@@ -39,7 +39,7 @@ function PrintAllGuildNamesSmallerThan(memberCount)
         -- free resources
         db.free(resultId)
     else
-        -- no guilds founded or error
-        print(string.format("There were no guilds with less than %d members, or there was an error in query execution", memberCount)
+        -- no guilds found or query execution error
+        print(string.format("No guilds with less than %d members found, or query execution error", memberCount)
     end
 end
