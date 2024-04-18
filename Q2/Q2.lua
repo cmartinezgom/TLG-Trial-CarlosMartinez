@@ -7,11 +7,11 @@
 -- 2- I have checked if every name is self-explanatory and follows the camelCase convention (for variables) or PascalCase convention (for functions). I am assuming this convention in also followed by the rest of the code.
 
 -- First function
--- 1- Knowing what this method is supposed to do, I have changed its name to "PrintAllGuildNamesSmallerThan", as it's more fitting than just saying "small", as we can vary the input parameter for the size.
--- 2- The original method just returned one guild name. I have changed it to print all the possible rows of the result of the query.
--- 3- Also, I have added a "prepare" statement before the query to increase security.
--- 4- I also check if the query is valid, just in case the query hasn't been successfull or there were no guilds smaller than the memberCount.
--- 5- Now we can iterate through all the possible result rows and print the name of the guilds.
+-- 1- Knowing what this method is supposed to do, I have changed its name to "PrintAllGuildNamesSmallerThan", as it's more fitting than just saying "small", since we can vary the input parameter for the size.
+-- 2- The original method returned just one guild name. I have changed it to print all possible rows resulting from the query.
+-- 3- Also, I have added a "prepare" statement before the query execution to increase security.
+-- 4- I also check if the query execution is valid, just in case the query hasn't been successful or there were no guilds smaller than the memberCount.
+-- 5- Now we can iterate through all possible result rows and print the name of the guilds.
 
 
 -- function that prints the name of all the guilds that have less members than memberCount parameter
